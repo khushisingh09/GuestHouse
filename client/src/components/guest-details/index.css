@@ -1,0 +1,110 @@
+.booking-table-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .booking-table-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 16px 32px rgba(0, 0, 0, 0.2);
+} */
+
+.booking-table-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.booking-check {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.booking-check input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.booking-check button {
+    padding: 8px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.booking-check button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.booking-table th,
+.booking-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    width: 12.5%;
+    color: #000; /* Set text color to black */
+}
+
+.booking-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.delete-button {
+    padding: 6px 12px;
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.delete-button i {
+    margin-right: 5px;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.edit-details-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.edit-details-button i {
+    margin-right: 5px;
+}
+
+.edit-details-button:hover {
+    background-color: #218838;
+}

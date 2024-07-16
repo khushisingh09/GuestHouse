@@ -1,0 +1,166 @@
+.signin-container {
+  width: 350px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 50px auto;
+  border-radius: 8px;
+}
+
+.avatar {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px; /* Adjust spacing */
+}
+
+.sign-in-heading {
+  margin-top: 0.5px; /* Reduced margin */
+  /* color: #edab00; */
+}
+
+.signin-container h2 {
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  background: #f0f0f0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0; /* Remove padding from the group */
+}
+
+.input-group .icon {
+  background: #edab00; /* Green background */
+  padding: 10px;
+  margin-right: 0; /* Remove right margin */
+  color: #fff;
+  border-radius: 5px 0 0 5px; /* To match the rounded corners */
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px; /* Add padding to the input */
+  border-radius: 0 5px 5px 0; /* To match the rounded corners */
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  accent-color: #edab00; /* Green checkbox background with white tick */
+  position: relative;
+}
+
+.checkbox-group input[type="checkbox"]:checked::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.checkbox-group label {
+  color: #edab00; /* Green color for Save Password text */
+}
+
+.login-btn {
+  background: #edab00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #c17710; /* Change background color on hover */
+}
+
+.extra-links {
+  margin-top: 20px;
+}
+
+.extra-links a {
+  display: block;
+  margin-bottom: 10px;
+  color: #edab00;
+  text-decoration: none;
+}
+
+.extra-links .password-text {
+  text-decoration: underline;
+} 
+
+.extra-links a span {
+  font-weight: bold;
+}
+
+.extra-links .account-text {
+  color: #000; /* Black color for "Don't have an account?" */
+}
+
+.extra-links .account-text .inner-extra-links {
+  color: #edab00;
+}
+
+.extra-links .account-text .inner-extra-links:hover{
+  color: #a66200;
+}
+
+.extra-links a span:hover {
+  /* text-decoration: underline; */
+  color: #a66200; /* Darker green on hover for "Sign Up" */
+}
+
+/* .extra-links a:hover {
+ 
+  color: #6aa436; 
+} */
+
+.extra-links .password-text:hover {
+  color: #a66200; 
+}
+
+.extra-links .account-text {
+  margin-bottom: 20px; /* Add some space below the "Don't have an account?" link */
+}
+
+.password-text {
+  margin-top: 20px; /* Add some space above the "Forgot Password" link */
+}

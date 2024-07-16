@@ -1,0 +1,50 @@
+/* .app {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .room-cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+   */
+/* Set global styles */
+
+/* .app {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .app h2 {
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .room-cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+   */
+
+.app {
+  padding: 20px;
+}
+
+.room-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  max-height: 90vh; /* Adjust height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
