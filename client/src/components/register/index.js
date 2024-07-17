@@ -27,7 +27,7 @@ const RegisterForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8000/api/auth/register", formData, {
+      const response = await axios.post("https://guesthouse-backend-xbty.onrender.com/api/auth/register", formData, {
         headers: {
           "Content-Type": "application/json",
         },
