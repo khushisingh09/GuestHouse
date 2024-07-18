@@ -20,6 +20,7 @@ const app = express();
 console.log("url",process.env.FRONTEND_URL)
 app.use(cors({
   origin: [process.env.FRONTEND_URL],
+  methods:["POST","GET"],
   credentials:true 
 }));
 app.use(bodyParser.json());
