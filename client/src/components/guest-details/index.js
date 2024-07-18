@@ -9,7 +9,7 @@ const BookingTable = () => {
     };
     const handleCheck = async () => {
         try {
-            const response = await axios.get(`https://guesthouse-backend-xbty.onrender.com/api/bookings/${cid}`);
+            const response = await axios.get(`https://guest-house-backend.vercel.app/api/bookings/${cid}`);
             setBookings(response.data);
         } catch (error) {
             console.error('Error fetching bookings:', error);

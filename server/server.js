@@ -17,7 +17,9 @@ const bookingSearchRoute = require('./routes/bookingSearchRoute');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [process.env.FRONTEND_URL]
+}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 

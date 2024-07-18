@@ -53,7 +53,7 @@ const BookingForm = () => {
             const token = localStorage.getItem('token');
             console.log("hello token ", token);
 
-            const response = await axios.post('https://guesthouse-backend-xbty.onrender.com/api/bookings/create', formData, {
+            const response = await axios.post('https://guest-house-backend.vercel.app/api/bookings/create', formData, {
                 headers: {
                     'token': token,
                 },
