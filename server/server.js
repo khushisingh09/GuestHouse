@@ -20,7 +20,7 @@ const app = express();
 console.log("url",process.env.FRONTEND_URL)
 app.use(cors({
   origin: [process.env.FRONTEND_URL],
-  credentials:true
+  credentials:true 
 }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -44,7 +44,10 @@ app.use('/api/bookings', bookingSearchRoute);
 
 // Root route
 app.get('/', (req, res) => {
-  res.send('Guesthouse Booking System API');
+  res.json({
+    msg:'Guesthouse Booking System API',
+    url:process.env.FRONTEND_URL
+  });
 });
 
 // Start the server
